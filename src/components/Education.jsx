@@ -6,6 +6,9 @@ import udemyDsa from "./images/udemy_dsa.png";
 import myAvatar from "./images/avatar1.png";
 import Draggable from "react-draggable";
 import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
+import educationData from "./education";
 
 const DraggableBox = ({ id, children }) => {
   const updateXarrow = useXarrow();
@@ -16,70 +19,62 @@ const DraggableBox = ({ id, children }) => {
   );
 };
 
-const Education = () => {
-  const [line1, setLine1] = React.useState(null);
-  const [line2, setLine2] = React.useState(null);
-  const box1Ref = useRef(null);
-  const handleDrag = () => {
-    line1.position();
-    line2.position();
-  };
-
+const EducationCard = ({
+  i,
+  title,
+  date,
+  course,
+  location,
+  link,
+  collegeName,
+}) => {
   return (
-    <div className="education">
+    <div
+      className={`timeline__event  animated fadeInUp delay-3s timeline__event--type${i}`}
+    >
+      <div className="timeline__event__icon ">
+        <FontAwesomeIcon icon={faUserGraduate} />
+      </div>
+      <div className="timeline__event__date">
+        {course}
+        <br />
+        {` ${date} `}
+      </div>
+      <div className="timeline__event__content ">
+        <div className="timeline__event__title">{title}</div>
+        <div className="timeline__event__subtitle">@{collegeName}</div>
+        <div className="timeline__event__description">
+          <div className="timeline__event__description_subhead">
+            College Details
+          </div>
+          <p>Address : {location}</p>
+          <p>Affiliation: {link}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Education = () => {
+  return (
+    <div className="timeline-container">
       <h1 className="heading">Education</h1>
-
       <div className="set">
-        <Xwrapper>
-          {/* <Course
-          courseImg={universityImg}
-          courseName="B.Voc - Web development"
-          courseType="Graduation (2019 - 2022)"
-          courseStatus="bachelor's in software engineering"
-          completed={true}
-        />
-        <Course
-          courseImg={googlrCertificateImg}
-          courseName="Google - Digital Marketing Certificate"
-          courseType="Certification"
-          courseStatus="Certified"
-          completed={true}
-        /> */}
-          <DraggableBox id="item1" className="zoomin_scroll">
-            <img src={googlrCertificateImg} />
-            <div></div>
-          </DraggableBox>
-          <DraggableBox id="item2" className="zoomin_scroll">
-            <img src={freeCodeCampDsa} />
-          </DraggableBox>
-          <DraggableBox id="item3" className="zoomin_scroll">
-            <img src={udemyDsa} />
-          </DraggableBox>
-
-          {/* <h1 id="elem2">ronak</h1> */}
-
-          <DraggableBox id="my_avtar_img">
-            <img src={myAvatar} />
-          </DraggableBox>
-          <Xarrow
-            start="my_avtar_img" //can be react ref
-            end="item1"
-            strokeWidth={3}
-            dashed
-          />
-          <Xarrow
-            start="my_avtar_img" //can be react ref
-            end="item2"
-            strokeWidth={3}
-            dashed
-          />
-          <Xarrow
-            start="my_avtar_img" //can be react ref
-            end="item3"
-            strokeWidth={3}
-            dashed
-          />
-        </Xwrapper>
+        <div className="timeline">
+          {educationData.map((exp, i) => (
+            <EducationCard
+              key={i}
+              i={`${i + 1}`}
+              title={exp.courseTitle}
+              course={exp.courseName}
+              date={exp.timeSpan}
+              collegeName={exp.collegeName}
+              location={exp.location}
+              link={exp.affiliation}
+              responsibilities={exp.Responsibilities.join(" &#183; ")}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
