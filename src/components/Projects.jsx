@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.stylesheet.scss";
 import Project from "./Project";
-import urbImg from "./images/project-1.jpg";
+import project2 from "./images/project2.png";
 import kccImg from "./images/project-2.jpg";
-import TypescriptPracticeAppImg from "./images/typscriptPacticeApp.png";
+import project1 from "./images/project1.png";
 
 const Projects = () => {
   return (
@@ -11,21 +11,24 @@ const Projects = () => {
       <h1 className="heading">Projects</h1>
       <div className="set">
         <Project
-          projectImg={TypescriptPracticeAppImg}
+          projectImg={project1}
           projectDesc="I built this webpage for a doctor, SEO-friendly webpage with beautiful UI. Moreover, fluent in getting user queries and direct them on Gmail."
-          projectLink="https://webronak.github.io/typescript-taskify-app/"
-          techList={["javascript", "css", "html"]}
+          projectLink="https://movie-booking-ts.vercel.app/"
+          gitLink="https://github.com/aamir-islam/MovieBookingTS"
+          techList={["react", "javascript", "css", "html"]}
         />
         <Project
-          projectImg={urbImg}
+          projectImg={project2}
           projectDesc="I built this webpage for a doctor, SEO-friendly webpage with beautiful UI. Moreover, fluent in getting user queries and direct them on Gmail."
-          projectLink="https://myurb.in/"
-          techList={["javascript", "css", "html"]}
+          projectLink="https://todo-list-tau-gilt.vercel.app/"
+          gitLink="https://github.com/aamir-islam/Todo-list"
+          techList={["react", "javascript", "css", "html"]}
         />
         <Project
           projectImg={kccImg}
           projectDesc="a fully responsive web portel for a coaching institute, containing saveral pages and easy navigation. built using bootstap and PHP."
           projectLink="https://www.khalsacoachingcentre.com/"
+          gitLink="https://github.com/aamir-islam/MovieBookingTS"
           techList={["javascript", "css", "html", "bootstrap"]}
         />
       </div>
