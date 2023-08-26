@@ -7,9 +7,9 @@ import {
   faCode,
   faPersonDigging,
   faUserGraduate,
-  faBriefcase
+  faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
-import myAvatar from "./images/ronak_avatar.png"
+import myAvatar from "./images/ronak_avatar.png";
 import { withRouter } from "react-router-dom";
 class Bio extends React.Component {
   constructor() {
@@ -58,10 +58,15 @@ class Bio extends React.Component {
                 front end developer
               </small>
             </Tilt>
-            <ul className="nav" onClick={() => this.setState({ toggle: false })}>
+            <ul
+              className="nav"
+              onClick={() => this.setState({ toggle: false })}
+            >
               <Link to="/experience">
                 <li
-                  className={location.pathname.includes("experience") ? "active" : ""}
+                  className={
+                    location.pathname.includes("experience") ? "active" : ""
+                  }
                 >
                   <FontAwesomeIcon icon={faBriefcase} />
                   <span className="text">Experience</span>
@@ -69,7 +74,9 @@ class Bio extends React.Component {
               </Link>
               <Link to="/skills">
                 <li
-                  className={location.pathname.includes("skills") ? "active" : ""}
+                  className={
+                    location.pathname.includes("skills") ? "active" : ""
+                  }
                 >
                   <FontAwesomeIcon icon={faCode} />
                   <span className="text">Skills</span>
@@ -85,19 +92,18 @@ class Bio extends React.Component {
                   <span className="text">Projects</span>
                 </li>
               </Link>
-              <Link to="certifications">
+              <Link to="Education">
                 <li
                   className={
-                    location.pathname.includes("certifications") ? "active" : ""
+                    location.pathname.includes("Education") ? "active" : ""
                   }
                 >
                   <FontAwesomeIcon icon={faUserGraduate} />
-                  <span className="text">Certifications</span>
+                  <span className="text">Education</span>
                 </li>
               </Link>
             </ul>
           </div>
-
 
           {/* toogle button for links */}
           <div
@@ -117,14 +123,17 @@ class Bio extends React.Component {
               <img src={myAvatar} />
             </div>
           </Link>
-          <div className="drawerBtn">
-
-          </div>
+          <div className="drawerBtn"></div>
           <div className="otherPagesLinks">
-            <ul className="nav" onClick={() => this.setState({ toggle: false })}>
+            <ul
+              className="nav"
+              onClick={() => this.setState({ toggle: false })}
+            >
               <Link to="/experience">
                 <li
-                  className={location.pathname.includes("experience") ? "active" : ""}
+                  className={
+                    location.pathname.includes("experience") ? "active" : ""
+                  }
                 >
                   <FontAwesomeIcon icon={faBriefcase} />
                   <span className="text">Experience</span>
@@ -132,7 +141,9 @@ class Bio extends React.Component {
               </Link>
               <Link to="/skills">
                 <li
-                  className={location.pathname.includes("skills") ? "active" : ""}
+                  className={
+                    location.pathname.includes("skills") ? "active" : ""
+                  }
                 >
                   <FontAwesomeIcon icon={faCode} />
                   <span className="text">Skills</span>
@@ -148,14 +159,14 @@ class Bio extends React.Component {
                   <span className="text">Projects</span>
                 </li>
               </Link>
-              <Link to="certifications">
+              <Link to="Education">
                 <li
                   className={
-                    location.pathname.includes("certifications") ? "active" : ""
+                    location.pathname.includes("Education") ? "active" : ""
                   }
                 >
                   <FontAwesomeIcon icon={faUserGraduate} />
-                  <span className="text">Certifications</span>
+                  <span className="text">Education</span>
                 </li>
               </Link>
             </ul>
