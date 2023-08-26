@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.stylesheet.scss";
 import Project from "./Project";
 import project2 from "./images/project2.png";
-import kccImg from "./images/project-2.jpg";
+import project3 from "./images/project3.png";
 import project1 from "./images/project1.png";
 
 const Projects = () => {
@@ -25,11 +25,11 @@ const Projects = () => {
           techList={["react", "javascript", "css", "html"]}
         />
         <Project
-          projectImg={kccImg}
+          projectImg={project3}
           projectDesc="a fully responsive web portel for a coaching institute, containing saveral pages and easy navigation. built using bootstap and PHP."
-          projectLink="https://www.khalsacoachingcentre.com/"
-          gitLink="https://github.com/aamir-islam/MovieBookingTS"
-          techList={["javascript", "css", "html", "bootstrap"]}
+          projectLink="https://crypto-globe-ozaere0rn-aamir-islam.vercel.app/"
+          gitLink="https://github.com/aamir-islam/CryptoGlobe"
+          techList={["react", "javascript", "css", "html"]}
         />
       </div>
     </div>
