@@ -1,23 +1,7 @@
-import React, { useEffect, useRef } from "react";
 import "./Education.stylesheet.scss";
-import googlrCertificateImg from "./images/google-certificate-ronak.png";
-import freeCodeCampDsa from "./images/freeCodeCamp_dsa.png";
-import udemyDsa from "./images/udemy_dsa.png";
-import myAvatar from "./images/avatar1.png";
-import Draggable from "react-draggable";
-import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import educationData from "./education";
-
-const DraggableBox = ({ id, children }) => {
-  const updateXarrow = useXarrow();
-  return (
-    <Draggable onDrag={updateXarrow} onStop={updateXarrow}>
-      <div id={id}>{children}</div>
-    </Draggable>
-  );
-};
 
 const EducationCard = ({
   i,
