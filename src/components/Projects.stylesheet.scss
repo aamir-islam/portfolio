@@ -1,0 +1,119 @@
+.projects{
+  height: 100%;
+}
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  .project {
+    width: 46%;
+    box-shadow: rgba(49, 57, 65, 0.2) 0px 8px 24px;
+    background-color: rgb(230, 255, 255);
+    border-radius: 7px;
+    position: relative;
+    margin-top: 6rem;
+    margin-left: 1.6rem;
+    height: 18.6rem;
+    transition: ease-in-out 0.4s;
+    &:hover {
+      margin-top: 9.3rem;
+      .project_img {
+        top: -8.6rem;
+        left: 17.4%;
+        width: 35%;
+        height: 8rem;
+        border-radius: 7px;
+        box-shadow: rgba(49, 57, 65, 0.2) 0px 8px 24px;
+      }
+    }
+    .project_img {
+      width: 85%;
+      transition: ease-in-out 0.3s;
+      // transition-delay: 0.4s;
+      height: 20rem;
+      position: absolute;
+      border-radius: 30px;
+      left: 50%;
+      top: -4.4rem;
+      transform: translateX(-50%);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-position: center;
+      background-color: white;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .project_techstack_list {
+      width: 85%;
+      margin: auto;
+      margin-top: 2rem;
+      .project_techstack_head {
+        text-align: center;
+        background-color: #31b1ef;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 50px;
+        font-weight: 600;
+        width: fit-content;
+        margin: auto;
+      }
+      .project_techstack_list_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // background-color: white;
+        height: 5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        .project_techstack_img {
+          width: 3.8rem;
+          height: 3.8rem;
+          border: 1px solid #31b1ef;
+          padding: 2px;
+          display: block;
+          box-shadow: #31b1ef 0px 5px 15px;
+          border-radius: 50px;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+    }
+    .action_btns {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      button {
+        color: white;
+        border-radius: 50px;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        display: block;
+        cursor: pointer;
+        font-size: 1rem;
+        left: 0;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: rgba(240, 0, 140, 0.9);
+        border: none;
+        border-radius: 50px;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          background-color: rgba(240, 0, 140, 1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .set .project {
+    width: 90%;
+    margin: 9rem auto 0 auto;
+  }
+}
