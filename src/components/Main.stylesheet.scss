@@ -3,10 +3,6 @@
   height: 100vh;
   background: linear-gradient(45deg, #00b1ff, #86deff);
   overflow: hidden;
-  // background-color: black;
-  // // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  // background-size: 400% 400%;
-  // animation: gradient 15s ease infinite;
   display: flex;
   position: relative;
   justify-content: center;
@@ -29,7 +25,6 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
-    // box-shadow: 0px 0px 50px rgb(207, 207, 207);
     border: 0.3px solid rgb(233, 233, 233);
 
     .bioBottom {
@@ -37,29 +32,12 @@
       border-radius: 0px 30px 30px 0px;
       padding: 1rem 0;
       position: absolute;
-      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      // bottom: 0;
       top: 50%;
       transform: translateY(-50%);
       right: -4.8rem;
       width: fit-content;
       overflow: visible;
       animation: bioBottomLeftToRight 0.3s linear 0.4s 1 normal backwards;
-      // ::after {
-      //   content: " ";
-      //   width: 102%;
-      //   left: 50%;
-      //   z-index: -1;
-      //   transform: translateX(-50%);
-      //   bottom: 0;
-      //   position: absolute;
-      //   border-radius: 30px 0px 0 0;
-      //   height: 108%;
-      //   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      //   display: block;
-      //   background-color: #31b1ef;
-      //   animation: bottomToTop 0.3s linear 1s 1 normal backwards;
-      // }
       p {
         text-align: center;
         font-weight: 700;
@@ -74,7 +52,6 @@
         margin: 5px auto;
       }
       .socialLinks {
-        // margin-top: 20px;
         list-style: none;
         a {
           text-decoration: none;
@@ -129,7 +106,6 @@
       }
       50% {
         transform: rotate(180deg);
-        // right: -17%;
         bottom: 50%;
       }
       100% {
@@ -163,12 +139,9 @@
     border-radius: 20px 20px 20px 20px !important;
     padding: 0 0;
     position: absolute;
-    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    // bottom: 0;
     bottom: -2rem !important;
     top: auto !important;
     transform: none;
-    // top:0;
     right: -1rem;
     width: fit-content;
     height: fit-content;
@@ -177,7 +150,6 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3),
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     .socialLinks {
-      // margin-top: 20px;
       list-style: none;
       a {
         text-decoration: none;

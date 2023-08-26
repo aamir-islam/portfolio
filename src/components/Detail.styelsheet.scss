@@ -1,8 +1,6 @@
 .detail {
   height: 96%;
   width: 80%;
-  // position: relative;
-  //   background-color: white;
   border-radius: 20px;
   .heading {
     padding: 10px 20px;
@@ -19,7 +17,6 @@
     margin-bottom: 10px;
     font-size: 1.3rem;
     animation: topToBottom 0.5s linear 0s 1 normal backwards;
-    // background: white;
     svg {
       color: rgb(255, 24, 63);
       width: 30px;
@@ -97,8 +94,6 @@
     }
   }
 }
-
-// ANIMATIONS
 @keyframes topToBottom {
   0% {
     top: -10rem;

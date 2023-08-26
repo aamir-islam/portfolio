@@ -1,47 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-class SkillComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      percentage: 0,
-    };
-  }
-  componentDidMount() {
-    setInterval(() => {
-      if (this.state.percentage < this.props.percentage) {
-        this.setState({ percentage: this.state.percentage + 1 });
+const SkillComponent = (props) => {
+  const [percentage, setPercentage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (percentage < props.percentage) {
+        setPercentage((prevPercentage) => prevPercentage + 1);
       }
     }, 11);
-  }
 
-  render(props) {
-    const labelStr =
-      this.state.percentage < 30
-        ? "beginner"
-        : this.state.percentage < 70
-        ? "intermediate"
-        : "Perfect";
-    return (
-      <div className="skill">
-        <img src={this.props.img} alt="react" />
+    return () => clearInterval(interval);
+  }, [percentage, props.percentage]);
 
-        <div className="skillName">
-          <h4>{this.props.name}</h4>
-          <div className="progressBar">
-            <div className="fullLimit">
-              <div
-                className="limit"
-                style={{ width: `${this.state.percentage}%` }}
-              ></div>
-            </div>
+  const labelStr =
+    percentage < 30 ? "beginner" : percentage < 70 ? "intermediate" : "Perfect";
+
+  return (
+    <div className="skill">
+      <img src={props.img} alt="react" />
+
+      <div className="skillName">
+        <h4>{props.name}</h4>
+        <div className="progressBar">
+          <div className="fullLimit">
+            <div className="limit" style={{ width: `${percentage}%` }}></div>
           </div>
         </div>
-        {this.state.percentage == this.props.percentage && (
-          <div className={`skill-badge percentage-${labelStr}`}>{labelStr}</div>
-        )}
       </div>
-    );
-  }
-}
+      {percentage === props.percentage && (
+        <div className={`skill-badge percentage-${labelStr}`}>{labelStr}</div>
+      )}
+    </div>
+  );
+};
+
 export default SkillComponent;

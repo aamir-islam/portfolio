@@ -8,7 +8,6 @@
     rgba(255, 255, 255, 0.7),
     rgba(212, 255, 249, 0.8)
   );
-  // box-shadow: 0px 0px 20px rgb(212, 212, 212);
   border: 0.2px solid rgb(233, 233, 233);
   border-radius: 20px 0px 0px 20px;
   display: flex;
@@ -21,7 +20,6 @@
     width: 100px;
     height: 100px;
     margin: 5px auto;
-    // background-image: url("./images/myImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +31,6 @@
     align-items: flex-end;
     box-shadow: inset 0 0 5px;
     img {
-      // position: absolute;
       border-radius: 0 0 4.1rem 4.1rem;
       width: 100%;
     }
@@ -226,7 +223,6 @@
       }
     }
     .routes {
-      // display: none;
       width: 70%;
       height: 100vh;
       position: absolute;
@@ -264,18 +260,18 @@
       top: -20px;
       left: -15px;
       position: absolute;
-      // background-image: url("./images/myImg.jpg");
+     
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       border-radius: 50%;
       background-color: white;
-      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      
       display: flex;
       align-items: flex-end;
       box-shadow: inset 0 0 1px;
       img {
-        // position: absolute;
+       
         border-radius: 0 0 4.1rem 4.1rem;
         width: 100%;
       }
@@ -327,15 +323,7 @@
         }
         &:hover,
         &.active {
-          // width: 160px;
-          // svg {
-          //   position: absolute;
-          //   top: -17px;
-          //   left: -15px;
-          //   width: 15px;
-          //   font-size: 1rem;
-          //   transform: rotate(180);
-          // }
+         
         }
       }
       svg {
@@ -346,7 +334,7 @@
   }
 }
 
-// ANIMATIONS
+
 @keyframes topToBottom {
   0% {
     top: -10rem;

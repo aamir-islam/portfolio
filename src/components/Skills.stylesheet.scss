@@ -1,10 +1,7 @@
 .skills {
   .set {
-    // custom scrollbar of div
-
     .skill {
       width: 90%;
-      // border: 0.1px solid white;
       position: relative;
       background-color: #ffffff70;
       padding: 10px;
@@ -13,12 +10,6 @@
       display: flex;
       backdrop-filter: blur(0.2rem);
       align-items: center;
-      // justify-content: space-between;
-      // background-image: linear-gradient(
-      //   45deg,
-      //   rgba(0, 183, 255, 0.3),
-      //   rgba(121, 255, 237, 0.3)
-      // );
       box-shadow: rgba(49, 57, 65, 0.2) 0px 8px 24px;
       img {
         width: 60px;
@@ -73,35 +64,11 @@
         animation: rightToLeft 0.3s linear 0.4s 1 normal backwards;
         background-color: #f0008c;
         padding: 0.2rem 0.6rem;
-        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         font-weight: 900;
         position: absolute;
         color: white;
       }
-      // &:hover {
-      //   transform: translate(5px);
-      //   transition-duration: 0.2s;
-      //   img {
-      //     left: -15px;
-      //     transition-duration: 0.2s;
-      //     top: -15px;
-      //   }
-      // }
-      // .percentage-advance {
-      //   background-color: rgb(0, 183, 30);
-      // }
-      // .percentage-intermediate {
-      //   background-color: rgb(202, 152, 1);
-      //   color: white;
-      //   padding: 0.2rem 0.6rem;
-      //   font-weight: 900;
-      // }
-      // .percentage-beginner {
-      //   background-color: rgb(204, 106, 2);
-      //   color: white;
-      //   padding: 0.2rem 0.6rem;
-      //   font-weight: 900;
-      // }
+     
     }
   }
 }

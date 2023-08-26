@@ -13,7 +13,6 @@
     border-radius: 20px;
     width: 90%;
     background-color: white;
-    // display: none;
     .intro {
       display: flex;
       flex-direction: column;
@@ -90,8 +89,6 @@
     button {
       display: none;
       position: absolute;
-      // display: flex;
-      // align-items: center;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
@@ -126,7 +123,6 @@
     transition-duration: 0.5s;
   }
   .imgToggle {
-    // left: 0px;
     width: 25%;
   }
 }
@@ -187,15 +183,15 @@
   }
 }
 
-// ANIMATIONS
+
 @keyframes wavingHand {
   0% {
     transform: rotate(0deg);
-    // font-size: 100rem;
+    
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  } 
   20% {
     transform: rotate(-8deg);
   }
@@ -210,7 +206,7 @@
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  } 
   100% {
     transform: rotate(0deg);
   }
