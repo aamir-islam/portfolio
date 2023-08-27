@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.abb68c9c.chunk.css",
+    "main.js": "/static/js/main.d059317c.chunk.js",
+    "main.js.map": "/static/js/main.d059317c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f0e9cb1b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f0e9cb1b.js.map",
+    "static/css/2.f78674c2.chunk.css": "/static/css/2.f78674c2.chunk.css",
+    "static/js/2.1ad9e948.chunk.js": "/static/js/2.1ad9e948.chunk.js",
+    "static/js/2.1ad9e948.chunk.js.map": "/static/js/2.1ad9e948.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f78674c2.chunk.css.map": "/static/css/2.f78674c2.chunk.css.map",
+    "static/css/main.abb68c9c.chunk.css.map": "/static/css/main.abb68c9c.chunk.css.map",
+    "static/js/2.1ad9e948.chunk.js.LICENSE.txt": "/static/js/2.1ad9e948.chunk.js.LICENSE.txt",
+    "static/media/Resume.2a3f7ce3.pdf": "/static/media/Resume.2a3f7ce3.pdf",
+    "static/media/bootstrap.42907533.png": "/static/media/bootstrap.42907533.png",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/js.b8eabfa0.png": "/static/media/js.b8eabfa0.png",
+    "static/media/project1.4c20df07.png": "/static/media/project1.4c20df07.png",
+    "static/media/project2.fa96b47c.png": "/static/media/project2.fa96b47c.png",
+    "static/media/project3.d82e0ba1.png": "/static/media/project3.d82e0ba1.png",
+    "static/media/react.78e61144.png": "/static/media/react.78e61144.png",
+    "static/media/ronak_avatar.0573b747.png": "/static/media/ronak_avatar.0573b747.png",
+    "static/media/sass.1e4b8ee6.png": "/static/media/sass.1e4b8ee6.png",
+    "static/media/typescript.0ce75f39.png": "/static/media/typescript.0ce75f39.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0e9cb1b.js",
+    "static/css/2.f78674c2.chunk.css",
+    "static/js/2.1ad9e948.chunk.js",
+    "static/css/main.abb68c9c.chunk.css",
+    "static/js/main.d059317c.chunk.js"
+  ]
+}
