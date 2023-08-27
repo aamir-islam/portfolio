@@ -51,6 +51,7 @@ const Experience = () => {
         <div className="timeline">
           {data.reverse().map((exp, i) => (
             <ExperienceCard
+              key={i}
               i={`${i + 1}`}
               title={exp.jobTitle}
               date={exp.timeSpan}
