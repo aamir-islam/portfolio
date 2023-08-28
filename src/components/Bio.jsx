@@ -9,7 +9,7 @@ import {
   faUserGraduate,
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
-import myAvatar from "./images/ronak_avatar.png";
+import myAvatar from "./images/myavtar.png";
 
 function Bio() {
   const [toggle, setToggle] = useState(false);
@@ -33,7 +33,7 @@ function Bio() {
             <div className="myImg Tilt-inner">
               <img src={myAvatar} alt="my-avatar" />
             </div>
-            <h2>Ronak</h2>
+            <h2>Aamir</h2>
             <small>
               React js developer
               <br />
