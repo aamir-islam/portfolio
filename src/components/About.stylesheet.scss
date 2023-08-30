@@ -111,7 +111,8 @@
       }
     }
     .buttonToggle {
-      display: block;
+      display: flex;
+      cursor: pointer;
     }
   }
 

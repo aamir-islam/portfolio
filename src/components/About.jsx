@@ -14,16 +14,15 @@ function About() {
           </h2>
           <ul>
             <li>
-              <span className="emoji">👨‍💼</span> Frontend Developer with 1+ years
-              of professional experiences in Web Designing and Front-end
+              <span className="emoji">👨‍💼</span> Frontend Developer with over 1.4
+              years of professional experience in Web Designing and Front-end
               Development.
             </li>
             <li>
               <span className="emoji">🧰</span> Tech stack: HTML(5), Css(3),
-              Sass, Less, Bootstrap, JavaScript, Typescript, Reactjs, Redux,
-              Material UI, Redux-thunk, Redux-saga, RTK queries, react-queries,
-              styled-components, Nodejs, Jest, react-testing-library, Git &
-              GitHub.
+              Sass, JavaScript, Typescript, Reactjs, Redux, Material UI,
+              Redux-thunk, Redux-saga, RTK queries, styled-components, Nodejs,
+              Jest, react-testing-library, Git & GitHub.
             </li>
             <li>
               <span className="emoji">👷‍♂️</span> Strong experience with Cross

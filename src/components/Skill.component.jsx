@@ -8,7 +8,7 @@ const SkillComponent = (props) => {
       if (percentage < props.percentage) {
         setPercentage((prevPercentage) => prevPercentage + 1);
       }
-    }, 11);
+    }, 10);
 
     return () => clearInterval(interval);
   }, [percentage, props.percentage]);
