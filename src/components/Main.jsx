@@ -27,7 +27,7 @@ const Main = () => {
               </li>
             </a>
             <a
-              href="https://wa.me/917060753642?text=Hi%20Ronak,%20let's%20build%20something%20awesome%20together."
+              href="https://wa.me/917060753642?text=Hi%20Aamir,%20let's%20build%20something%20awesome%20together."
               target="blank"
             >
               <li>

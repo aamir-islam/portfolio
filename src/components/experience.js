@@ -24,14 +24,6 @@ function getDateDifference(startDate, endDate) {
 
 const data = [
   {
-    jobTitle: "SDE - Internship",
-    company: "YUWAITING TECHNOLOGIES PVT LTD",
-    timeSpan: "Nov 2021 - Apr 2022",
-    time: "6 Months",
-    technicalSkills: ["Javascript", "React.js", "SCSS", "CSS", "HTML"],
-    Responsibilities: ["Logic building", "Responsive UI building", "Designing"],
-  },
-  {
     jobTitle: "SDE - 1",
     company: "SCALEREAL TECHNOLOGIES PVT. LTD",
     timeSpan: "May 2022 - Current..",
@@ -57,6 +49,14 @@ const data = [
       "Web Performance",
       "Optimizing applications",
     ],
+  },
+  {
+    jobTitle: "SDE - Internship",
+    company: "YUWAITING TECHNOLOGIES PVT LTD",
+    timeSpan: "Nov 2021 - Apr 2022",
+    time: "6 Months",
+    technicalSkills: ["Javascript", "React.js", "SCSS", "CSS", "HTML"],
+    Responsibilities: ["Logic building", "Responsive UI building", "Designing"],
   },
 ];
 

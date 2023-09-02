@@ -16,13 +16,13 @@ function Skills() {
       <h1 className="heading">Skills</h1>
 
       <div className="set">
-        <SkillComponent percentage={99} img={jsImg} name="javascript" />
-        <SkillComponent percentage={95} img={TypescriptImg} name="Typescript" />
-        <SkillComponent percentage={95} img={reactImg} name="react js" />
+        <SkillComponent percentage={90} img={jsImg} name="javascript" />
+        <SkillComponent percentage={90} img={TypescriptImg} name="Typescript" />
+        <SkillComponent percentage={90} img={reactImg} name="react js" />
         <SkillComponent percentage={90} img={reduxImg} name="redux" />
-        <SkillComponent percentage={80} img={scImg} name="styled components" />
+        <SkillComponent percentage={90} img={scImg} name="styled components" />
         <SkillComponent
-          percentage={99}
+          percentage={80}
           img={sassImg}
           name="SASS - CSS pre processer"
         />

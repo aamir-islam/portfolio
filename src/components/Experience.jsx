@@ -49,7 +49,7 @@ const Experience = () => {
       <h1 className="heading">Experience</h1>
       <div className="set">
         <div className="timeline">
-          {data.reverse().map((exp, i) => (
+          {data.map((exp, i) => (
             <ExperienceCard
               key={i}
               i={`${i + 1}`}
