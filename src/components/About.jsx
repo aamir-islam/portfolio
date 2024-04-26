@@ -14,7 +14,7 @@ function About() {
           </h2>
           <ul>
             <li>
-              <span className="emoji">👨‍💼</span> Frontend Developer with over 1.4
+              <span className="emoji">👨‍💼</span> Frontend Developer with over 2+
               years of professional experience in Web Designing and Front-end
               Development.
             </li>
